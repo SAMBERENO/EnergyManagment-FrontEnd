@@ -3,7 +3,7 @@ import { onMounted, ref} from 'vue';
 import EnergyChart from "./components/EnergyChart.vue";
 import type {AvgWithCleanEnergy, OptimalChargingWindow} from "./types";
 
-const API_BASE = '/energy';
+const API_BASE = 'https://energymanagment-backend.onrender.com/energy';
 
 const days = ref<AvgWithCleanEnergy[]>([]);
 const loadingMix = ref(false);
